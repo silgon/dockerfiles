@@ -7,6 +7,6 @@ To start the server enter:
     
 Then go to you Web browser and access the following address:
 
-    http://localhost:9080
+    http://localhost:9000
     
 That's it.

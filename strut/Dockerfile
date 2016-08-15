@@ -1,3 +1,4 @@
+# docker run --rm -p 9000:9000 silgon/strut
 FROM node:6.3-slim
 
 RUN wget https://github.com/tantaman/Strut/archive/master.tar.gz -O ./Strut.tar.gz \

@@ -1,0 +1,2 @@
+FROM emscripten/emsdk:2.0.10
+RUN wget https://github.com/opencv/opencv/archive/refs/tags/4.8.0.tar.gz &&    tar xf 4.8.0.tar.gz && cd opencv-4.8.0/ &&     emcmake python3 ./platforms/js/build_js.py build_js --cmake_option=-DOPENCV_GENERATE_PKGCONFIG=ON &&    cd build_js && make install && cd /src && rm -r opencv-4.8.0 4.8.0.tar.gz &&    apt update && apt install --no-install-recommends -y pkg-config && rm -rf /var/lib/apt/lists/*
